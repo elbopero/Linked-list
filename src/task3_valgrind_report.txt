@@ -1,0 +1,40 @@
+==4225== Memcheck, a memory error detector
+==4225== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==4225== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==4225== Command: ./task3
+==4225== 
+==4225== 
+==4225== Process terminating with default action of signal 2 (SIGINT)
+==4225==    at 0x4945311: read (read.c:26)
+==4225==    by 0x48D77AF: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:524)
+==4225==    by 0x48D88F1: _IO_default_uflow (genops.c:362)
+==4225==    by 0x48CC079: _IO_getline_info (iogetline.c:60)
+==4225==    by 0x48CB11A: fgets (iofgets.c:53)
+==4225==    by 0x1094E6: main (in /home/torero/exam/PGR3401_V23_1097/task3/src/task3)
+
+---------------------------------------------------------
+
+Enter one of the numbers to perform the following actions
+
+----------------------------------------------------------
+
+1. Insert a departure
+2. Insert passenger reservation to a departure
+3. Get departure information
+4. Get departures based on departure time
+5. Delete a departure
+6. Delete a passengers reservation
+7. Change seat for a passenger
+8. Search for passenger name in departures
+9. Exit
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enter number: 
+Enter departure ID: ==4225== 
+==4225== HEAP SUMMARY:
+==4225==     in use at exit: 0 bytes in 0 blocks
+==4225==   total heap usage: 2 allocs, 2 frees, 5,120 bytes allocated
+==4225== 
+==4225== All heap blocks were freed -- no leaks are possible
+==4225== 
+==4225== For counts of detected and suppressed errors, rerun with: -v
+==4225== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
